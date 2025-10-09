@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Detail - Eduport</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="icon" href="/assests/img/icon/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <span>EDUPORT</span>
+        </div>
+        <nav class="nav">
+          <a href="/index.html" class="nav-link">HOME</a>
+          <a href="./course.html" class="nav-link">COURSES</a>
+          <a href="/pages/contact.html" class="nav-link">CONTACT</a>
+          <a href="/pages/about.html" class="nav-link">ABOUT</a>
+          <div class="cart-icon">🛒</div>
+          <a href="#" class="signup-btn">SIGN UP</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Course Detail Section -->
+    <section class="course-detail">
+      <div class="container">
+        <div class="course-detail-content">
+          <div class="course-detail-left">
+            <h2>HTML 5</h2>
+            <div class="course-image-large">
+              <img src="/assests/img/01.jpeg" alt="Course" />
+            </div>
+          </div>
+          <div class="course-detail-right">
+            <h1>HTML Full Course</h1>
+            <div class="price">$19.00</div>
+            <p class="course-description">
+              Ready to get your HTML knowledge advanced? The certification will
+              prove your skills and help you start working on serious business
+              jobs and create better user experiences.
+            </p>
+            <p class="certification-note">
+              Become a Certified HTML developer with W3Schools.
+            </p>
+            <div class="quantity-section">
+              <label for="quantity">Quantity</label>
+              <div class="quantity-controls">
+                <input type="number" id="quantity" value="1" min="1" required oninput="validity.valid||(value='');" />
+                <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+            </div>
+            <button class="buy-now-btn">
+              <a href="/pages/order-success.html">BUY NOW →</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">EDUPORT</div>
+            <p>
+              Eduport education theme, built specifically for the education
+              centers which is dedicated to teaching and involve learners.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/pages/about.html">ABOUT</a></li>
+              <li><a href="/pages/course.html">COURSES</a></li>
+              <a href="/pages/contact.html">CONTACT</a>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>
+              Toll Free: +1234567891<br />
+              (9 AM to 8 PM IST)
+            </p>
+            <p>Email: example@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyrights ©2025 Eduport. Build by Azhagan N J</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

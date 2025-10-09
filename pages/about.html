@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Us</title>
+    <link rel="icon" href="/assests/img/icon/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        background: #f9fafc;
+        color: #333;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Header Styles */
+      .header {
+        background: white;
+        padding: 1rem 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo span {
+        background: #000;
+        color: white;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: #666;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .nav-link:hover,
+      .nav-link.active {
+        color: #000;
+      }
+
+      .cart-icon {
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+
+      .signup-btn {
+        background: #000;
+        color: white;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background 0.3s;
+      }
+
+      .signup-btn:hover {
+        background: #333;
+      }
+      .hero {
+        text-align: center;
+        padding: 70px 20px;
+        color: white;
+      }
+      .hero h1 {
+        font-size: 42px;
+        margin-bottom: 12px;
+        color: #000;
+      }
+      .hero p {
+        font-size: 18px;
+        max-width: 700px;
+        margin: 0 auto;
+        color: #000;
+      }
+      .about {
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 0 20px;
+        text-align: center;
+      }
+      .about h2 {
+        font-size: 28px;
+        color: #000;
+        margin-bottom: 15px;
+      }
+      .about p {
+        font-size: 16px;
+        margin-bottom: 18px;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        max-width: 1100px;
+        margin: 0 auto 70px;
+        padding: 0 20px;
+      }
+      .card {
+        background: white;
+        border-radius: 14px;
+        padding: 25px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .card h3 {
+        font-size: 20px;
+        color: #000;
+        margin-bottom: 12px;
+      }
+      .card p {
+        font-size: 15px;
+      }
+      .footer {
+        background: #333;
+        color: white;
+        padding: 3rem 0 1rem;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 3rem;
+        margin-bottom: 2rem;
+      }
+
+      .footer-logo {
+        background: white;
+        color: black;
+        padding: 0.5rem 1rem;
+        display: inline-block;
+        margin-bottom: 1rem;
+        font-weight: bold;
+      }
+
+      .footer-brand p {
+        color: #ccc;
+        line-height: 1.6;
+      }
+
+      .footer-section h4 {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        margin-left: 40px;
+      }
+
+      .footer-section ul {
+        list-style: none;
+      }
+
+      .footer-section ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      .footer-section ul li a {
+        color: #ccc;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-section ul li a:hover {
+        color: white;
+      }
+
+      .footer-section p {
+        color: #ccc;
+        line-height: 1.6;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid #555;
+        padding-top: 1rem;
+        text-align: center;
+        color: #ccc;
+      }
+
+      .view-more-btn a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .buy-btn a {
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <span>EDUPORT</span>
+        </div>
+        <nav class="nav">
+          <a href="/index.html" class="nav-link active">HOME</a>
+          <a href="/pages/course.html" class="nav-link">COURSES</a>
+          <a href="/pages/contact.html" class="nav-link">CONTACT</a>
+          <a href="/pages/about.html" class="nav-link">ABOUT</a>
+          <div class="cart-icon">🛒</div>
+          <a href="#" class="signup-btn">SIGN UP</a>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <h1>About Us</h1>
+      <p>
+        Discover our story, our purpose, and the vision that drives us forward.
+      </p>
+    </section>
+    <section class="about">
+      <h2>Who We Are</h2>
+      <p>
+        We are passionate about exploring diverse cultures, traditions, and
+        stories from around the world. Our mission is to share authentic
+        experiences and knowledge that connect people across different
+        backgrounds.
+      </p>
+      <p>
+        Through blogs, learning resources, and creative content, we aim to
+        inspire curiosity and appreciation for the beauty of global diversity.
+      </p>
+    </section>
+    <section class="cards">
+      <div class="card">
+        <h3>Our Mission</h3>
+        <p>
+          To educate and inspire people about world cultures through engaging
+          content, encouraging respect and unity.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Our Vision</h3>
+        <p>
+          To become a leading platform that bridges cultural gaps and celebrates
+          diversity across the globe.
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">EDUPORT</div>
+            <p>
+              Eduport education theme, built specifically for the education
+              centers which is dedicated to teaching and involve learners.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/pages/about.html">ABOUT</a></li>
+              <li><a href="/pages/course.html">COURSES</a></li>
+              <li><a href="/pages/contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>
+              Toll Free: +1234567891<br />
+              (9 AM to 8 PM IST)
+            </p>
+            <p>Email: example@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyrights ©2025 Eduport. Build by Azhagan N J</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
